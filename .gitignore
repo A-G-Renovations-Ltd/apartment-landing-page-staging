@@ -1,0 +1,13 @@
+# Raw photos: only the optimised WebP versions in images/ are committed
+photos-raw/
+# Working snippet written by optimize_flat_photos.py
+gallery-tiles.html
+# OS / editor files
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Working file written by optimize_flat_photos.py
+project-*.html
