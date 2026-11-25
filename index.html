@@ -45,7 +45,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/apartment.css?v=2">
+  <link rel="stylesheet" href="css/apartment.css?v=3">
 
 
 
@@ -184,7 +184,7 @@
       <nav class="nav" aria-label="Page sections">
         <a href="#plan">The work</a>
         <a href="#before">Before you start</a>
-        <a href="#flats">Our flats</a>
+        <a href="#flats">Our work</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">Questions</a>
       </nav>
@@ -876,27 +876,75 @@
     <section class="section gallery" id="flats" aria-labelledby="flats-h">
       <div class="wrap">
         <div class="section-head">
-          <h2 class="h2" id="flats-h">Recent flats <em class="accent">across London</em></h2>
-          <p class="lead">Real A&amp;G projects in London homes. Tap a flat to see all of its photos.</p>
+          <h2 class="h2" id="flats-h">Our work <em class="accent">across London</em></h2>
+          <p class="lead">Real A&amp;G projects in London homes: a whole-home tour, then the kitchens and bathrooms that make up most of a flat refurbishment. Tap a project to see all of its photos.</p>
         </div>
+        <h3 class="gal-group">Video tours</h3>
         <div class="ptiles">
-          <!-- PLACEHOLDER: project tile 1. Replace with a real A&G flat (see README, "Adding flat projects"). -->
-          <button type="button" class="ptile" data-placeholder data-images="images/placeholders/flat-photo.webp" data-caption="Placeholder project" aria-label="Placeholder project tile">
-            <picture><img src="images/placeholders/flat-photo.webp" alt="Placeholder: photo of a finished A&amp;G flat" width="1600" height="1200" loading="lazy" decoding="async"></picture>
-            <span class="ptile-count">Photos</span>
-            <span class="ptile-meta"><span class="ptile-title">Flat in [area]</span><span class="ptile-sub">One line on what changed: layout, kitchen, bathrooms</span><span class="ptile-view">View project</span></span>
+          <!-- VIDEO TILE: home-tour (YouTube T3FLthLc9Fc; the player loads from youtube-nocookie.com only after a tap) -->
+          <button type="button" class="ptile vtile" data-video="T3FLthLc9Fc" data-caption="Whole-home renovation tour" aria-label="Play video: Whole-home renovation tour">
+            <picture><img src="images/videos/home-tour-640.webp" srcset="images/videos/home-tour-640.webp 640w, images/videos/home-tour-1280.webp 1280w" sizes="(max-width: 860px) 82vw, 380px" alt="" width="1280" height="720" loading="lazy" decoding="async"></picture>
+            <span class="vplay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M7 4.5v13l11-6.5z" fill="currentColor"/></svg></span>
+            <span class="ptile-count">Video</span>
+            <span class="ptile-meta"><span class="ptile-title">Whole-home tour</span><span class="ptile-sub">Herringbone floors, oak doors and a home office</span><span class="ptile-view">Play video</span></span>
           </button>
-          <!-- PLACEHOLDER: project tile 2. Replace with a real A&G flat (see README, "Adding flat projects"). -->
-          <button type="button" class="ptile" data-placeholder data-images="images/placeholders/flat-photo.webp" data-caption="Placeholder project" aria-label="Placeholder project tile">
-            <picture><img src="images/placeholders/flat-photo.webp" alt="Placeholder: photo of a finished A&amp;G flat" width="1600" height="1200" loading="lazy" decoding="async"></picture>
-            <span class="ptile-count">Photos</span>
-            <span class="ptile-meta"><span class="ptile-title">Flat in [area]</span><span class="ptile-sub">One line on what changed: layout, kitchen, bathrooms</span><span class="ptile-view">View project</span></span>
+          <!-- VIDEO TILE: marble-bathroom (YouTube i0X_SP3tkds; the player loads from youtube-nocookie.com only after a tap) -->
+          <button type="button" class="ptile vtile" data-video="i0X_SP3tkds" data-caption="Marble-effect bathroom" aria-label="Play video: Marble-effect bathroom">
+            <picture><img src="images/videos/marble-bathroom-640.webp" srcset="images/videos/marble-bathroom-640.webp 640w, images/videos/marble-bathroom-1280.webp 1280w" sizes="(max-width: 860px) 82vw, 380px" alt="" width="1280" height="720" loading="lazy" decoding="async"></picture>
+            <span class="vplay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M7 4.5v13l11-6.5z" fill="currentColor"/></svg></span>
+            <span class="ptile-count">Video</span>
+            <span class="ptile-meta"><span class="ptile-title">Marble-effect bathroom</span><span class="ptile-sub">Rainfall shower over the bath</span><span class="ptile-view">Play video</span></span>
           </button>
-          <!-- PLACEHOLDER: project tile 3. Replace with a real A&G flat (see README, "Adding flat projects"). -->
-          <button type="button" class="ptile" data-placeholder data-images="images/placeholders/flat-photo.webp" data-caption="Placeholder project" aria-label="Placeholder project tile">
-            <picture><img src="images/placeholders/flat-photo.webp" alt="Placeholder: photo of a finished A&amp;G flat" width="1600" height="1200" loading="lazy" decoding="async"></picture>
-            <span class="ptile-count">Photos</span>
-            <span class="ptile-meta"><span class="ptile-title">Flat in [area]</span><span class="ptile-sub">One line on what changed: layout, kitchen, bathrooms</span><span class="ptile-view">View project</span></span>
+          <!-- VIDEO TILE: handleless-kitchen (YouTube IXyCoFUqoiY; the player loads from youtube-nocookie.com only after a tap) -->
+          <button type="button" class="ptile vtile" data-video="IXyCoFUqoiY" data-vertical data-caption="German handleless kitchen" aria-label="Play video: German handleless kitchen">
+            <picture><img src="images/videos/handleless-kitchen-405.webp" alt="" width="405" height="720" loading="lazy" decoding="async"></picture>
+            <span class="vplay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M7 4.5v13l11-6.5z" fill="currentColor"/></svg></span>
+            <span class="ptile-count">Short video</span>
+            <span class="ptile-meta"><span class="ptile-title">Handleless kitchen</span><span class="ptile-sub">Light grey units with a marble finish</span><span class="ptile-view">Play video</span></span>
+          </button>
+        </div>
+
+        <h3 class="gal-group">Kitchens</h3>
+        <div class="ptiles">
+          <!-- PROJECT TILE: ealing -->
+          <button type="button" class="ptile" data-base="images/kitchens/ealing/ealing-01,images/kitchens/ealing/ealing-02,images/kitchens/ealing/ealing-03,images/kitchens/ealing/ealing-04,images/kitchens/ealing/ealing-05,images/kitchens/ealing/ealing-06,images/kitchens/ealing/ealing-07" data-start="0" data-caption="Kitchen in Ealing" aria-label="View the Ealing kitchen, 7 photos">
+            <picture style="background-image:url('data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAADQBQCdASoYACQAPulap02pJKOiMBqtUSAdCWUAwCgSjnRJcIfr4Kt9/eIZ+wn6788JIsetE+sAAP5rJfPsNfC3kMrWGV4WUPrw160haJYxo55bvRIkfxw8A9S23pjCRa3CQAPt4FALGU97UfKDmTC/nkgNNWtR2KoWdSl/QPBU1JxJH7FjixcfdWqWtPFvNbt1kjW8ZAD7oJ/96tQMb4xVaTf9svWrNMZ0BaAaZ0iId20zHWtKiQfeHXcxe/15CGmURNgm8L+PgHKKH7plsn7ey7tkgWr0KbLIBFegS0IqQAAA')"><source type="image/avif" sizes="(max-width: 860px) 82vw, 380px" srcset="images/kitchens/ealing/ealing-01-480.avif 480w, images/kitchens/ealing/ealing-01-800.avif 800w, images/kitchens/ealing/ealing-01-1200.avif 1200w, images/kitchens/ealing/ealing-01-1600.avif 1600w"><source type="image/webp" sizes="(max-width: 860px) 82vw, 380px" srcset="images/kitchens/ealing/ealing-01-480.webp 480w, images/kitchens/ealing/ealing-01-800.webp 800w, images/kitchens/ealing/ealing-01-1200.webp 1200w, images/kitchens/ealing/ealing-01-1600.webp 1600w"><img src="images/kitchens/ealing/ealing-01-800.webp" alt="Ealing kitchen under three skylights, with a marble-effect waterfall island, wood units with brass handles and glass doors to the garden" width="1600" height="2048" loading="lazy" decoding="async"></picture>
+            <span class="ptile-count">7 photos</span>
+            <span class="ptile-meta"><span class="ptile-title">Kitchen in Ealing</span><span class="ptile-sub">Fluted wood units, a waterfall island and brass taps</span><span class="ptile-view">View project</span></span>
+          </button>
+          <!-- PROJECT TILE: kensal -->
+          <button type="button" class="ptile" data-base="images/kitchens/kensal/kensal-18,images/kitchens/kensal/kensal-10,images/kitchens/kensal/kensal-07,images/kitchens/kensal/kensal-13,images/kitchens/kensal/kensal-06,images/kitchens/kensal/kensal-14,images/kitchens/kensal/kensal-09,images/kitchens/kensal/kensal-15,images/kitchens/kensal/kensal-20" data-start="0" data-caption="Kitchen in Kensal" aria-label="View Kitchen in Kensal, 9 photos">
+            <picture style="background-image:url('data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwBACdASoYABIAPu1urlIppiQiqAgBMB2JZwDM0Aga0QMIL7bTWMV39icpVMs5R4AA/pbOHc79I8ke+zp9P8tY+0cH+Pg5BsIrhT9LOsOHB3/sImw6vjxf3/Hp+8Lz5c+YdoUE4HJBZYgjy3BSW3jD10D+t+KxG55bGcqhRlfvP2ScSQUQkowuFb4OUc9LRx+8oJGHzwAAAA==')"><source type="image/avif" sizes="(max-width: 860px) 82vw, 380px" srcset="images/kitchens/kensal/kensal-18-480.avif 480w, images/kitchens/kensal/kensal-18-800.avif 800w, images/kitchens/kensal/kensal-18-1200.avif 1200w, images/kitchens/kensal/kensal-18-1600.avif 1600w"><source type="image/webp" sizes="(max-width: 860px) 82vw, 380px" srcset="images/kitchens/kensal/kensal-18-480.webp 480w, images/kitchens/kensal/kensal-18-800.webp 800w, images/kitchens/kensal/kensal-18-1200.webp 1200w, images/kitchens/kensal/kensal-18-1600.webp 1600w"><img src="images/kitchens/kensal/kensal-18-800.webp" alt="Kensal kitchen with dusty pink shaker units, glass pendant lights over a stone-topped island, and a patterned tile alcove behind a Belfast sink" width="1600" height="1200" loading="lazy" decoding="async"></picture>
+            <span class="ptile-count">9 photos</span>
+            <span class="ptile-meta"><span class="ptile-title">Kitchen in Kensal</span><span class="ptile-sub">Dusty pink shaker units and a patterned tile alcove</span><span class="ptile-view">View project</span></span>
+          </button>
+          <!-- PROJECT TILE: croydon -->
+          <button type="button" class="ptile" data-base="images/kitchens/croydon/croydon-01,images/kitchens/croydon/croydon-02,images/kitchens/croydon/croydon-03,images/kitchens/croydon/croydon-04,images/kitchens/croydon/croydon-05,images/kitchens/croydon/croydon-06" data-start="0" data-caption="Kitchen in Croydon" aria-label="View the Croydon kitchen, 6 photos">
+            <picture style="background-image:url('data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAACQBQCdASoYACAAPu1oqVAppaOiqA1RMB2JZQC06EI85EFCHAOXMbKFCS+gPaXMxaD7tnE2gAD3JrYoqWlONWuQes8xeJQal+6GfHvQLvhq2qVTBLmTEDINMRFvqC/B5WY3W5ndvNUTd8UUXORRt1woqeJ76GCkSX9j074Mkj8qFohcGb/Vn2rRCnzTnq7F4+5F0hIfommN59EbScSTGvea5QAAAA==')"><source type="image/avif" sizes="(max-width: 860px) 82vw, 380px" srcset="images/kitchens/croydon/croydon-01-480.avif 480w, images/kitchens/croydon/croydon-01-800.avif 800w, images/kitchens/croydon/croydon-01-1200.avif 1200w, images/kitchens/croydon/croydon-01-1600.avif 1600w"><source type="image/webp" sizes="(max-width: 860px) 82vw, 380px" srcset="images/kitchens/croydon/croydon-01-480.webp 480w, images/kitchens/croydon/croydon-01-800.webp 800w, images/kitchens/croydon/croydon-01-1200.webp 1200w, images/kitchens/croydon/croydon-01-1600.webp 1600w"><img src="images/kitchens/croydon/croydon-01-800.webp" alt="Croydon kitchen with soft grey handleless units, white worktops, a large window and a herringbone floor" width="1600" height="2133" loading="lazy" decoding="async"></picture>
+            <span class="ptile-count">6 photos</span>
+            <span class="ptile-meta"><span class="ptile-title">Kitchen in Croydon</span><span class="ptile-sub">Soft grey handleless units, a big window and a herringbone floor</span><span class="ptile-view">View project</span></span>
+          </button>
+        </div>
+
+        <h3 class="gal-group">Bathrooms</h3>
+        <div class="ptiles">
+          <!-- PROJECT TILE: bathroom aldersbrook (photos from the bathroom page) -->
+          <button type="button" class="ptile" data-images="images/bathrooms/aldersbrook/full/aldersbrook-01.webp,images/bathrooms/aldersbrook/full/aldersbrook-02.webp,images/bathrooms/aldersbrook/full/aldersbrook-03.webp,images/bathrooms/aldersbrook/full/aldersbrook-04.webp,images/bathrooms/aldersbrook/full/aldersbrook-05.webp" data-caption="Bathroom in Aldersbrook" aria-label="View the Aldersbrook bathroom, 5 photos">
+            <picture><img src="images/bathrooms/aldersbrook/low/aldersbrook-01.webp" srcset="images/bathrooms/aldersbrook/low/aldersbrook-01.webp 800w, images/bathrooms/aldersbrook/full/aldersbrook-01.webp 1600w" sizes="(max-width: 860px) 82vw, 380px" alt="Aldersbrook bathroom with a green vanity unit, brass taps and lights, white tiles and a marble-effect bath panel" width="800" height="600" loading="lazy" decoding="async"></picture>
+            <span class="ptile-count">5 photos</span>
+            <span class="ptile-meta"><span class="ptile-title">Bathroom in Aldersbrook</span><span class="ptile-sub">Green vanity, brass fittings and a marble-effect bath</span><span class="ptile-view">View project</span></span>
+          </button>
+          <!-- PROJECT TILE: bathroom hounslow (photos from the bathroom page) -->
+          <button type="button" class="ptile" data-images="images/bathrooms/hounslow/full/hounslow-01.webp,images/bathrooms/hounslow/full/hounslow-02.webp,images/bathrooms/hounslow/full/hounslow-03.webp,images/bathrooms/hounslow/full/hounslow-04.webp,images/bathrooms/hounslow/full/hounslow-05.webp,images/bathrooms/hounslow/full/hounslow-06.webp" data-caption="Bathroom in Hounslow" aria-label="View the Hounslow bathroom, 6 photos">
+            <picture><img src="images/bathrooms/hounslow/low/hounslow-01.webp" srcset="images/bathrooms/hounslow/low/hounslow-01.webp 600w, images/bathrooms/hounslow/full/hounslow-01.webp 1200w" sizes="(max-width: 860px) 82vw, 380px" alt="Hounslow bathroom with stone-coloured tiles, a glass screen over the bath and matt black shower fittings" width="600" height="800" loading="lazy" decoding="async"></picture>
+            <span class="ptile-count">6 photos</span>
+            <span class="ptile-meta"><span class="ptile-title">Bathroom in Hounslow</span><span class="ptile-sub">Three bathrooms in one home</span><span class="ptile-view">View project</span></span>
+          </button>
+          <!-- PROJECT TILE: bathroom poplar (photos from the bathroom page) -->
+          <button type="button" class="ptile" data-images="images/bathrooms/poplar/full/poplar-01.webp,images/bathrooms/poplar/full/poplar-02.webp,images/bathrooms/poplar/full/poplar-03.webp,images/bathrooms/poplar/full/poplar-04.webp,images/bathrooms/poplar/full/poplar-05.webp" data-caption="Bathroom in Poplar" aria-label="View the Poplar bathroom, 5 photos">
+            <picture><img src="images/bathrooms/poplar/low/poplar-01.webp" srcset="images/bathrooms/poplar/low/poplar-01.webp 600w, images/bathrooms/poplar/full/poplar-01.webp 1200w" sizes="(max-width: 860px) 82vw, 380px" alt="Poplar shower room with brushed brass fittings, an arched mirror, a wood vanity and a terrazzo floor" width="600" height="800" loading="lazy" decoding="async"></picture>
+            <span class="ptile-count">5 photos</span>
+            <span class="ptile-meta"><span class="ptile-title">Bathroom in Poplar</span><span class="ptile-sub">Two bathrooms with brushed brass and terrazzo</span><span class="ptile-view">View project</span></span>
           </button>
         </div>
 
@@ -1330,6 +1378,7 @@
   <dialog class="lightbox" id="lightbox" aria-label="Project photos">
     <div class="lb-inner">
       <img id="lb-img" src="" alt="">
+      <div class="lb-video" id="lb-video" hidden></div>
       <div class="lb-meta"><span id="lb-cap"></span><span id="lb-count"></span></div>
       <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Close">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 4l10 10M14 4 4 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
@@ -1856,6 +1905,21 @@
         idx = Number(el.dataset.start || 0); render(); lb.showModal();
         track('gallery_open', { caption: caption });
       }));
+      /* Videos: the YouTube player (privacy-enhanced youtube-nocookie.com) loads only after a tap and is removed on close */
+      const vbox = document.getElementById('lb-video');
+      document.querySelectorAll('[data-video]').forEach(el => el.addEventListener('click', () => {
+        set = []; caption = el.dataset.caption || '';
+        const f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(el.dataset.video) + '?autoplay=1&rel=0&playsinline=1';
+        f.title = caption; f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true;
+        f.referrerPolicy = 'strict-origin-when-cross-origin';
+        vbox.replaceChildren(f); vbox.classList.toggle('is-vertical', 'vertical' in el.dataset); vbox.hidden = false;
+        img.hidden = true; img.removeAttribute('srcset'); img.removeAttribute('src');
+        cap.textContent = caption; count.textContent = ''; prev.hidden = next.hidden = true;
+        lb.showModal();
+        track('video_play', { video: caption });
+      }));
+      lb.addEventListener('close', () => { vbox.replaceChildren(); vbox.hidden = true; img.hidden = false; });
       prev.addEventListener('click', () => { idx = (idx - 1 + set.length) % set.length; render(); });
       next.addEventListener('click', () => { idx = (idx + 1) % set.length; render(); });
       document.getElementById('lb-close').addEventListener('click', () => lb.close());

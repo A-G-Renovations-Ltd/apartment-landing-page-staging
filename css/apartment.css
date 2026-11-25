@@ -1343,3 +1343,19 @@ body.cc-open .sticky-book { visibility: hidden; }
 .before-foot { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; }
 .before-foot p { font-size: 16px; color: var(--muted); }
 @media (max-width: 860px) { .before-grid { grid-template-columns: 1fr; } .bcard { padding: 18px 20px 22px; } .bcard h3 { font-size: 22px; } }
+
+/* ---------------------------------------------------------------- Gallery: videos, kitchens and bathrooms in three groups */
+.gal-group { font-size: 21px; font-weight: 600; letter-spacing: -0.01em; color: var(--forest-deep); margin: 38px 0 14px; }
+.section-head + .gal-group { margin-top: 0; }
+.vplay {
+  position: absolute; z-index: 2; top: 50%; left: 50%; width: 64px; height: 64px; margin: -52px 0 0 -32px;
+  display: grid; place-items: center; padding-left: 3px; border-radius: 50%;
+  color: var(--forest-deep); background: rgba(255, 255, 255, 0.92); box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.45);
+  transition: transform .25s ease;
+}
+.vtile:hover .vplay, .vtile:focus-visible .vplay { transform: scale(1.08); }
+.lb-video { width: 100%; aspect-ratio: 16 / 9; max-height: 76vh; border-radius: 10px; overflow: hidden; background: #000; }
+.lb-video.is-vertical { width: auto; height: 76vh; max-width: 100%; aspect-ratio: 9 / 16; margin: 0 auto; }
+.lb-video iframe { display: block; width: 100%; height: 100%; border: 0; }
+@media (max-width: 860px) { .gal-group { font-size: 19px; margin-top: 28px; } }
+.lb-btn[hidden], .lb-video[hidden] { display: none; }
